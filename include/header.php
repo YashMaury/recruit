@@ -1,3 +1,6 @@
+<?php
+include "constant.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Recruite Pro</title>
+  <title>PUBLIC SERVICE PROJECT (PSP) GROUP</title>
   <!-- Bootstrap -->
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CSS-->
@@ -40,18 +43,26 @@
       <div class="container">
         <div class="row">
           <!-- Logo -->
-          <div class="col-sm-12 col-md-3 hidden-xs"> <a href="index.php"><img src="images/logo.png"
-                alt="Recruite Pro" /></a> </div>
+          <div class="col-sm-12 col-md-3 hidden-xs" style="color: #fff;">
+            <a href="index.php">
+              <img src="images/logo.jpg" alt="Recruite Pro" style="width: 30px" />
+            </a>
+            PSP Group
+          </div>
           <!-- Navigation -->
           <div class="col-sm-12 col-md-9">
             <nav class="navbar navbar-default pull-right">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle
-                    navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Recruite Pro" /></a>
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">
+                  <img src="images/logo.jpg" alt="Recruite Pro" style="width: 30px" /></a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,8 +71,8 @@
                   <!-- <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Pages </a>
                     <ul class="dropdown-menu"> -->
-                      <li><a href="about-us.php">About Us</a></li>
-                      <!-- <li><a href="faq.php">FAQ</a></li>
+                  <li><a href="about-us.php">About Us</a></li>
+                  <!-- <li><a href="faq.php">FAQ</a></li>
                       <li><a href="coming-soon.php">Coming Soon</a></li>
                       <li><a href="404.php">404</a></li>
                     </ul>
@@ -70,15 +81,24 @@
                   <!-- <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Current Jobs </a>
                     <ul class="dropdown-menu"> -->
-                      <li><a href="recruitment.php">Recruitment</a></li>
-                      <!-- <li><a href="apply-job.php">Apply Job</a></li>
+                  <li><a href="recruitment.php">Recruitment</a></li>
+                  <li><a href="document.php">Documents</a></li>
+                  <!-- <li><a href="apply-job.php">Apply Job</a></li>
                     </ul>
                   </li> -->
+                  <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                      role="button" aria-haspopup="true" aria-expanded="false">Media</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="image-gallery.php">Image Gallery</a></li>
+                      <li><a href="video-gallery.php">Video Gallery</a></li>
+                      <li><a href="news-gallery.php">News Gallery</a></li>
+                    </ul>
+                  </li>
                   <!-- <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Blog </a>
                     <ul class="dropdown-menu"> -->
-                      <li><a href="blog.php">Blog</a></li>
-                      <!-- <li><a href="blog-details.php">Blog Details</a></li>
+                  <!-- <li><a href="blog.php">Blog</a></li> -->
+                  <!-- <li><a href="blog-details.php">Blog Details</a></li>
                     </ul>
                   </li> -->
                   <li><a href="contact-us.php">Contact Us</a></li>

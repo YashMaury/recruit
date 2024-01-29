@@ -1,40 +1,54 @@
 <?php
 include "include/header.php";
+$url = $URL . "notification/read_notification.php";
+$data = array();
+//print_r($data);
+$postdata = json_encode($data);
+$client = curl_init($url);
+curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
+$response = curl_exec($client);
+//print_r($response);
+$result = json_decode($response);
+//print_r($result);
 ?>
 
 <!-- Banner Wrapper Start -->
 <div class="banner-wrapper">
-  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel"> 
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
     <!-- Overlay -->
     <div class="overlay"></div>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item slides active">
-        <div class="slide-1"><img src="images/banner1.jpg" alt="Recruite Pro"/></div>
+        <div class="slide-1"><img src="images/banner1.jpg" alt="Recruite Pro" /></div>
         <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
         </div>
       </div>
       <div class="item slides">
-        <div class="slide-2"><img src="images/banner2.jpg" alt="Recruite Pro"/></div>
+        <div class="slide-2"><img src="images/banner2.jpg" alt="Recruite Pro" /></div>
         <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
         </div>
       </div>
       <div class="item slides">
-        <div class="slide-3"><img src="images/banner3.jpg" alt="Recruite Pro"/></div>
+        <div class="slide-3"><img src="images/banner3.jpg" alt="Recruite Pro" /></div>
         <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
         </div>
       </div>
     </div>
-    <div class="slide-arrows"><a class="left carousel-control" href="#bs-carousel" data-slide="prev"><span class="transition3s glyphicon glyphicon-chevron-left fa fa-angle-left"></span></a> <a class="right carousel-control" href="#bs-carousel" data-slide="next"><span class="transition3s glyphicon glyphicon-chevron-right fa fa-angle-right"></span></a></div>
+    <div class="slide-arrows"><a class="left carousel-control" href="#bs-carousel" data-slide="prev"><span
+          class="transition3s glyphicon glyphicon-chevron-left fa fa-angle-left"></span></a> <a
+        class="right carousel-control" href="#bs-carousel" data-slide="next"><span
+          class="transition3s glyphicon glyphicon-chevron-right fa fa-angle-right"></span></a></div>
   </div>
 </div>
-<!-- Banner Wrapper End --> 
+<!-- Banner Wrapper End -->
 <!-- Professional Search Start -->
 <!-- <div class="professional-search">
   <div class="container">
@@ -63,9 +77,9 @@ include "include/header.php";
     </div>
   </div>
 </div> -->
-<!-- Professional Search End --> 
+<!-- Professional Search End -->
 <!-- Callout Wrapper Start -->
-<div class="callouts-wrapper">
+<!-- <div class="callouts-wrapper">
   <div class="container">
     <div class="title">
       <h2>We Can Help You <span>Get A Job</span></h2>
@@ -115,11 +129,11 @@ include "include/header.php";
         </div>
       </div>
     </div>
-    <!-- <a href="#" class="btn-one">Browse All Categories</a> </div> -->
-</div>
-<!-- Callout Wrapper End --> 
+    <a href="#" class="btn-one">Browse All Categories</a> </div>
+</div> -->
+<!-- Callout Wrapper End -->
 <!-- Our counters -->
-<div class="counters">
+<!-- <div class="counters">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -151,75 +165,47 @@ include "include/header.php";
       </div>
     </div>
   </div>
-</div>
-<!-- Our counters End --> 
+</div> -->
+<!-- Our counters End -->
 <!-- Latest jobs Wrapper Start -->
 <div class="latest-jobs-wrapper">
   <div class="container">
     <div class="title">
-      <h2>Latest <span>Jobs</span></h2>
-      <h3>Here you can see</h3>
+      <h2>Latest <span>Notifications</span></h2>
+      <!-- <h3>Here you can see</h3> -->
     </div>
   </div>
   <div class="container">
-    <div class="single-jobs"> <i class="fa fa-twitter"></i>
-      <div class="job-heading">
-        <h3>Senior front-end developer</h3>
-        <p>Datebase Management Company, Permanent - New York</p>
-      </div>
-      <div class="our-location color1"> <span class="fa fa-map-marker" aria-hidden="true"></span>
-        <div class="location-content">
-          <h3>Menlo park, CA</h3>
-          <span>Full-Time</span> </div>
-      </div>
-    </div>
-    <div class="single-jobs"> <i class="fa fa-facebook"></i>
-      <div class="job-heading">
-        <h3>Senior front-end developer</h3>
-        <p>Datebase Management Company, Permanent - New York</p>
-      </div>
-      <div class="our-location color2"> <span class="fa fa-map-marker" aria-hidden="true"></span>
-        <div class="location-content">
-          <h3>Menlo park, CA</h3>
-          <span>Full-Time</span> </div>
-      </div>
-    </div>
-    <div class="single-jobs"> <i class="fa fa-google-plus"></i>
-      <div class="job-heading">
-        <h3>Senior front-end developer</h3>
-        <p>Datebase Management Company, Permanent - New York</p>
-      </div>
-      <div class="our-location color3"> <span class="fa fa-map-marker" aria-hidden="true"></span>
-        <div class="location-content">
-          <h3>Menlo park, CA</h3>
-          <span>Full-Time</span> </div>
-      </div>
-    </div>
-    <div class="single-jobs"> <i class="fa fa-linkedin"></i>
-      <div class="job-heading">
-        <h3>Senior front-end developer</h3>
-        <p>Datebase Management Company, Permanent - New York</p>
-      </div>
-      <div class="our-location color4"> <span class="fa fa-map-marker" aria-hidden="true"></span>
-        <div class="location-content">
-          <h3>Menlo park, CA</h3>
-          <span>Full-Time</span> </div>
-      </div>
-    </div>
-    <div class="single-jobs last"> <i class="fa fa-skype"></i>
-      <div class="job-heading">
-        <h3>Senior front-end developer</h3>
-        <p>Datebase Management Company, Permanent - New York</p>
-      </div>
-      <div class="our-location color5"> <span class="fa fa-map-marker" aria-hidden="true"></span>
-        <div class="location-content">
-          <h3>Menlo park, CA</h3>
-          <span>Full-Time</span></div>
-      </div>
-    </div>
+
+    <?php
+    $counter = 0;
+    foreach ($result as $key => $value) {
+      foreach ($value as $key1 => $value1) {
+        $pdf_path = "../admin/image/notification_pdf/" . $value1->id . "/pdf/" . $value1->id . ".pdf";
+        ?>
+
+        <div class="single-jobs"> <i class="fa fa-facebook"></i>
+          <div class="job-heading">
+            <h3>
+              <?php echo $value1->n_title; ?>
+            </h3>
+            <!-- <p>Datebase Management Company, Permanent - New York</p> -->
+          </div>
+          <div class="our-location color2">
+            <!-- <span class="fa fa-map-marker" aria-hidden="true"></span> -->
+            <div class="location-content">
+              <!-- <h3>Menlo park, CA</h3> -->
+              <a href="<?php echo $pdf_path; ?>" target="_blank"><span>View PDF</span></a>
+            </div>
+          </div>
+        </div>
+
+      <?php }
+    } ?>
+
   </div>
 </div>
-<!-- Latest jobs Wrapper End --> 
+<!-- Latest jobs Wrapper End -->
 <!-- Video Wrapper Start -->
 <div class="video-wrapper">
   <div class="container">
@@ -231,12 +217,20 @@ include "include/header.php";
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-offset-0">
-        <p> Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. <span> Vestibulum congue posuere lacus, id tincidunt nisi porta sit amet. Suspendisse et sapien varius, </span> pellentesque dui non, semper orci.</p>
-        <a href="https://www.youtube.com/watch?v=MWjk8asP2e8" class="btn btn-default" data-popup="video"><i class="fa fa-play"></i></a> </div>
+        <p>Public Service Project (PSP) Group is a trust which is registered under the government of india. This trust
+          was registered under the act 1882 by the rule of Indian gov. The president of this Trust is Nirmal Patel who
+          is the most legendary leader in Uttar Pradesh who created this trust from Allahabad District which is
+          stabilized in the uttar pradesh state. This trust is registered in 2020 by the india law. The trust has no
+          members which handle different types of activity.
+        </p>
+        <a href="https://www.youtube.com/watch?v=MWjk8asP2e8" class="btn btn-default" data-popup="video">
+          <i class="fa fa-play"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>
-<!-- Video Wrapper End --> 
+<!-- Video Wrapper End -->
 <!-- Popular Search Wrapper Start -->
 <!-- <div class="popular-search-wrapper">
   <div class="container">
@@ -327,7 +321,7 @@ include "include/header.php";
     <div class="text-center"> <a href="#" class="btn-one">Browse All Categories</a></div>
   </div>
 </div> -->
-<!-- Popular Search Wrapper End --> 
+<!-- Popular Search Wrapper End -->
 <!-- Testimonials Wrapper Start -->
 <div class="testimonials-wrapper">
   <div class="container">
@@ -338,7 +332,7 @@ include "include/header.php";
   </div>
   <div class="container">
     <div class="row">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Testimonials Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -351,7 +345,9 @@ include "include/header.php";
             <div class="col-md-8 col-sm-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0">
               <div class="testimonials-main">
                 <div class="testimonials-inner"> <i class="fa fa-quote-left"></i>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
                   <div class="testimonials-img-main"> </div>
                 </div>
                 <span class="triangle-down"></span>
@@ -367,7 +363,9 @@ include "include/header.php";
             <div class="col-md-8 col-sm-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0">
               <div class="testimonials-main">
                 <div class="testimonials-inner"> <i class="fa fa-quote-left"></i>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
                   <div class="testimonials-img-main"> </div>
                 </div>
                 <span class="triangle-down"></span>
@@ -383,7 +381,9 @@ include "include/header.php";
             <div class="col-md-8 col-sm-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0">
               <div class="testimonials-main">
                 <div class="testimonials-inner"> <i class="fa fa-quote-left"></i>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
                   <div class="testimonials-img-main"> </div>
                 </div>
                 <span class="triangle-down"></span>
@@ -400,7 +400,7 @@ include "include/header.php";
     </div>
   </div>
 </div>
-<!-- Testimonials Wrapper End --> 
+<!-- Testimonials Wrapper End -->
 <!-- App Wrapper Start -->
 <!-- <div class="app-wrapper">
   <div class="container">
@@ -423,9 +423,9 @@ include "include/header.php";
     </div>
   </div>
 </div> -->
-<!-- App Wrapper End --> 
+<!-- App Wrapper End -->
 <!-- Subscribe Wrapper Start -->
-<div class="subscribe-wrapper">
+<!-- <div class="subscribe-wrapper">
   <div class="container">
     <div class="title">
       <h2>Subscribe</h2>
@@ -444,10 +444,10 @@ include "include/header.php";
       </div>
     </div>
   </div>
-</div>
-<!-- Subscribe Wrapper End --> 
+</div> -->
+<!-- Subscribe Wrapper End -->
 <!-- blog Wrapper Start -->
-<div class="blog-wrapper">
+<!-- <div class="blog-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -455,7 +455,9 @@ include "include/header.php";
           <div class="blog-img"> <img src="images/blog-img1.jpg" alt=""> </div>
           <div class="blog-caption">
             <h3><a href="blog-details.php?d=agr">Importance Of Agriculture</a></h3>
-            <p>Organic forming by the company which is a method of agriculture. which is based on the use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land.</p>
+            <p>Organic forming by the company which is a method of agriculture. which is based on the use of synthetic
+              fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility
+              of land.</p>
           </div>
         </div>
       </div>
@@ -464,7 +466,9 @@ include "include/header.php";
           <div class="blog-img"> <img src="images/blog-img2.jpg" alt=""> </div>
           <div class="blog-caption">
             <h3><a href="blog-details.php?d=edu">Education Reform</a></h3>
-            <p>In our country, however civic duties have been included in the education theory. However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of...</p>
+            <p>In our country, however civic duties have been included in the education theory. However not all students
+              have their complete knowledge If today's students want to improve the level of education by keeping the
+              spirit of...</p>
           </div>
         </div>
       </div>
@@ -473,14 +477,16 @@ include "include/header.php";
           <div class="blog-img"> <img src="images/blog-img3.jpg" alt=""> </div>
           <div class="blog-caption">
             <h3><a href="blog-details.php?d=ssi">Small Scale Industry</a></h3>
-            <p>Small Scale Industry is also called cottage industry this is a field that gives maximum Jobs to the people. Small Scale industry has a very important contribution in strengthening the economy of our India Country. At present...</p>
+            <p>Small Scale Industry is also called cottage industry this is a field that gives maximum Jobs to the
+              people. Small Scale industry has a very important contribution in strengthening the economy of our India
+              Country. At present...</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- blog Wrapper End --> 
+</div> -->
+<!-- blog Wrapper End -->
 
 <?php
 include "include/footer.php";

@@ -11,7 +11,6 @@ include "include/header.php";
     </div>
     <ul class="inner-breadcrumb">
       <li><a href="index.php">Home</a></li>
-      <li>Pages</li>
       <li>Contact Us</li>
     </ul>
   </div>
@@ -24,21 +23,18 @@ include "include/header.php";
       <div class="col-md-6 col-sm-12">
         <div class="contactus-txt">
           <h2>Get in touch</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="contact-address">
           <div class="contact-left"> <i class="fa"><img src="images/contact-icon1.jpg" alt=""></i>
             <div class="address">
               <h3>Los Angeles</h3>
-              Porto Blvd, Suite 100 <span>Los Angeles/CA</span> <span>Phone: 123-456-7890</span> </div>
+              Prayagraj <span>Uttar Pradesh 229412</span> <span>Phone: +91-9335380064</span> </div>
           </div>
-          <div class="contact-right"> <i class="fa"><img src="images/contact-icon2.jpg" alt=""></i>
+          <!-- <div class="contact-right"> <i class="fa"><img src="images/contact-icon2.jpg" alt=""></i>
             <div class="address">
               <h3>New York</h3>
               Porto Blvd, Suite 100 <span>Los Angeles/CA</span> <span>Phone: 123-456-7890</span> </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-sm-6 hidden-sm"> <img src="images/contact-img.jpg" alt=""> </div>
@@ -55,7 +51,7 @@ include "include/header.php";
     <div class="container">
       <div class="form-bg">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-12">
             <div class="contact-form">
               <h2>Send Us a Message</h2>
               <div class="row">
@@ -87,7 +83,7 @@ include "include/header.php";
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <!-- <div class="col-sm-4">
             <div class="why-us">
               <h2>Why Us?</h2>
               <ul>
@@ -105,7 +101,7 @@ include "include/header.php";
                 <li>Staffing</li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
