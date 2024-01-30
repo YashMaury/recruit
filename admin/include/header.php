@@ -12,7 +12,7 @@ date_default_timezone_set('Asia/Kolkata');
   <meta name="description" content="Shyamavsvss Krishi limited">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Mrityunjay Singh">
-  <title>SHYAMAVSVSS KRISHI LIMITED</title>
+  <title>PSP Group</title>
   <!-- jsGrid -->
   <link rel="stylesheet" href="../common/plugins/jsgrid/jsgrid.min.css">
   <link rel="stylesheet" href="../common/plugins/jsgrid/jsgrid-theme.min.css">

@@ -1792,11 +1792,11 @@ div.apply-jobs-wrapper {
 ================================================
 */
 .breadcrumb-wrapper {
-	background-image: url(../images/inner-banner.jpg);
+	background-image: url(../images/bg.png);
 	background-position: center center;
-	background-size: cover;
+	background-size: contain;
 	float: left;
-	padding: 120px 0;
+	padding: 53px 0;
 	position: relative;
 	width: 100%;
 	z-index: 2;
@@ -1806,12 +1806,12 @@ div.apply-jobs-wrapper {
 	margin: 0 0 15px 0;
 }
 .breadcrumb-wrapper h2 {
-  border: 1px solid #89b927;
+  border: 3px solid #89b927;
   border-radius: 30px;
-  color: #ffffff;
+  color: #000;
   display: inline-block;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 30px;
   margin: 0;
   padding: 15px 25px;
@@ -1857,13 +1857,14 @@ div.apply-jobs-wrapper {
 	font-family: 'Rajdhani', sans-serif;	
 }
 .inner-breadcrumb li:last-child {
-	color: #89b927;
+	color: #aaff00;
+	font-weight: bold;
 }
 .inner-breadcrumb li a {
 	color: #fff;
 	display: block;
 	transition: all 0.3s ease-in-out 0s;
-	font-weight:500;
+	font-weight:bold;
 }
 .inner-breadcrumb li a:hover {
 	color: #89b927;

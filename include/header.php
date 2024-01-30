@@ -43,11 +43,11 @@ include "constant.php";
       <div class="container">
         <div class="row">
           <!-- Logo -->
-          <div class="col-sm-12 col-md-3 hidden-xs" style="color: #fff;">
-            <a href="index.php">
+          <div class="col-sm-12 col-md-3 hidden-xs">
+            <a href="index.php" style="color: #fff">
               <img src="images/logo.jpg" alt="Recruite Pro" style="width: 30px" />
+              PSP Group
             </a>
-            PSP Group
           </div>
           <!-- Navigation -->
           <div class="col-sm-12 col-md-9">
