@@ -27,8 +27,8 @@ include "include/header.php";
         <div class="contact-address">
           <div class="contact-left"> <i class="fa"><img src="images/contact-icon1.jpg" alt=""></i>
             <div class="address">
-              <h3>Los Angeles</h3>
-              Prayagraj <span>Uttar Pradesh 229412</span> <span>Phone: +91-9335380064</span> </div>
+              <h3>Atrampur</h3>
+              Prayagraj <span>Uttar Pradesh 229412</span> <span>Phone: +91 99186 78409</span> </div>
           </div>
           <!-- <div class="contact-right"> <i class="fa"><img src="images/contact-icon2.jpg" alt=""></i>
             <div class="address">

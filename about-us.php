@@ -52,7 +52,7 @@ include "include/header.php";
                     Public Service Project (PSP) Group is a trust which is registered under the government of india.
                     This trust was registered under the act 1882 by the rule of Indian gov. The president of this Trust
                     is Nirmal Patel who is the most legendary leader in Uttar Pradesh who created this trust from
-                    Allahabad District which is stabilized in the uttar pradesh state. This trust is registered in 2020
+                    Allahabad District which is stabilized in the uttar pradesh state. This trust is registered in 2021
                     by the india law. The trust has no members which handle different types of activity.
                   </p>
                 </div>

@@ -21,25 +21,25 @@ $result = json_decode($response);
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item slides active">
-        <div class="slide-1"><img src="images/banner1.jpg" alt="Recruite Pro" /></div>
-        <div class="hero">
+        <div class="slide-1"><img src="images/media/8.jpeg" alt="Slider" width="100%" /></div>
+        <!-- <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
-        </div>
+        </div> -->
       </div>
       <div class="item slides">
-        <div class="slide-2"><img src="images/banner2.jpg" alt="Recruite Pro" /></div>
-        <div class="hero">
+        <div class="slide-2"><img src="images/media/14.jpeg" alt="Slider" width="100%" /></div>
+        <!-- <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
-        </div>
+        </div> -->
       </div>
       <div class="item slides">
-        <div class="slide-3"><img src="images/banner3.jpg" alt="Recruite Pro" /></div>
-        <div class="hero">
+        <div class="slide-3"><img src="images/media/16.jpeg" alt="Slider" width="100%" /></div>
+        <!-- <div class="hero">
           <h1>We offer <span>1,259</span> job vacancies right now!</h1>
           <p>Find your desire one in a minute</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="slide-arrows"><a class="left carousel-control" href="#bs-carousel" data-slide="prev"><span
@@ -177,11 +177,12 @@ $result = json_decode($response);
   </div>
   <div class="container">
 
+  <div class="notification-panel" style="height: 400px; overflow: scroll; padding: 0 25px;">
     <?php
     $counter = 0;
     foreach ($result as $key => $value) {
       foreach ($value as $key1 => $value1) {
-        $pdf_path = "../admin/image/notification_pdf/" . $value1->id . "/pdf/" . $value1->id . ".pdf";
+        $pdf_path = "admin/image/notification_pdf/" . $value1->id . "/pdf/" . $value1->id . ".pdf";
         ?>
 
         <div class="single-jobs"> <i class="fa fa-facebook"></i>
@@ -202,6 +203,8 @@ $result = json_decode($response);
 
       <?php }
     } ?>
+      </div>
+
 
   </div>
 </div>
@@ -220,7 +223,7 @@ $result = json_decode($response);
         <p>Public Service Project (PSP) Group is a trust which is registered under the government of india. This trust
           was registered under the act 1882 by the rule of Indian gov. The president of this Trust is Nirmal Patel who
           is the most legendary leader in Uttar Pradesh who created this trust from Allahabad District which is
-          stabilized in the uttar pradesh state. This trust is registered in 2020 by the india law. The trust has no
+          stabilized in the uttar pradesh state. This trust is registered in 2021 by the india law. The trust has no
           members which handle different types of activity.
         </p>
         <a href="https://www.youtube.com/watch?v=MWjk8asP2e8" class="btn btn-default" data-popup="video">

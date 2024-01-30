@@ -31,10 +31,16 @@ include "include/header.php";
       </div>
       <div class="col-sm-4">
         <div class="blog-box">
-          <div class="blog-img"> <img src="images/media/cheque.jpeg" alt=""> </div>
+          <div class="blog-img"></div>
           <div class="blog-caption">
-            <h3><a href="images/media/cheque.jpeg" target="_blank">Cheque</a></h3>
-            <!-- <p>In our country, however civic duties have been included in the education theory. However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of...</p> -->
+            <h3><a href="images/media/cheque.jpeg" target="_blank">Account Details</a></h3>
+            <p>
+              PUBLIC SERVICE PROJECT (PSP) GROUP</br>
+              A/C No - 921020057558914</br>
+              IFSC Code - UTIB0002494</br>
+              Branch - Axis Bank Ltd</br>
+              Teliarganj All UP, Allahabad, 211004
+            </p>
           </div>
         </div>
       </div>

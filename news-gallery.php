@@ -16,7 +16,7 @@ $result = json_decode($response);
 <div class="breadcrumb-wrapper">
   <div class="container">
     <div class="banner-title">
-      <h2>Blog</h2>
+      <h2>News Gallery</h2>
       <div class="line"> <span></span></div>
     </div>
     <ul class="inner-breadcrumb">
