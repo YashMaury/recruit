@@ -69,7 +69,7 @@ include "include/header.php";
     <div class="row">
       <div class="col-md-7 col-sm-12 pull-right">
         <div class="creative-img">
-          <img src="https://ssegr.org.in/website/assets/images/services/services-details-img-5.jpg"
+          <img src="images/media/11.jpeg"
             class="img-responsive">
         </div>
       </div>
@@ -91,7 +91,7 @@ include "include/header.php";
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="creative-img">
-          <img src="https://ssegr.org.in/website/assets/images/services/services-details-img-1.jpg"
+          <img src="images/media/20.jpeg"
             class="img-responsive">
         </div>
       </div>
@@ -132,7 +132,7 @@ include "include/header.php";
     <div class="row">
       <div class="col-md-7 col-sm-12 pull-right">
         <div class="creative-img">
-          <img src="https://ssegr.org.in/website/assets/images/services/services.jpg" class="img-responsive">
+          <img src="images/media/9.jpeg" class="img-responsive">
         </div>
       </div>
       <div class="col-md-5 col-sm-12">

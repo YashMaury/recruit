@@ -1794,7 +1794,7 @@ div.apply-jobs-wrapper {
 .breadcrumb-wrapper {
 	background-image: url(../images/bg.png);
 	background-position: center center;
-	background-size: contain;
+	background-size: cover;
 	float: left;
 	padding: 53px 0;
 	position: relative;

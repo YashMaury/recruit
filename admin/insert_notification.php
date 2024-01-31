@@ -79,9 +79,9 @@ include "include/header.php";
           </div>
         </form>
           <!-- /.card-body -->
-          <div class="card-footer">
+          <!-- <div class="card-footer">
           SHYAMAVSVSS KRISHI LIMITED
-          </div>
+          </div> -->
         </div>
         <!-- /.card -->
 

@@ -54,7 +54,7 @@ $result = json_decode($response);
               </h3>
               <!-- <a href="#">Apply Now</a> -->
               <div class="btn">
-                <form action="../user/Instructions.php" method="post">
+                <form action="user/Instructions.php" method="post">
                   <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
                   <input type="hidden" name="exam_name" value="<?php echo $value1->exam_name; ?>">
                   <button type="submit" name="submit" class="btn btn-success text-white">Apply</button>
