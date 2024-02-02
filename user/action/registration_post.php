@@ -2,7 +2,7 @@
 include '../../constant.php';
 
 // if(isset($_POST["full_name"])){
-$full_name=strtoupper($_POST["full_name"]);
+$full_name=trim(strtoupper($_POST["first_name"]))." ".trim(strtoupper($_POST["last_name"]));
 $father_name=strtoupper($_POST["father_name"]);
 $mother_name=strtoupper($_POST["mother_name"]);
 $marital_status=$_POST["marital_status"];

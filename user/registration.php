@@ -105,7 +105,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 
   <div class="row">
     
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-12">
             <div class="form-group">
               <label for="input">Apply For</label>
                <div class="input-group-append">
@@ -116,20 +116,36 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
             </div>
           </div>
         </div>
+    </div>
+
+        <div class="row">
 
         <div class="col-sm-12 col-md-6">
           <div class="form-group">
-           <label for="input">Full Name </label>
+           <label for="input">First Name </label>
              <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-              <input type="text" class="form-control" placeholder="Full Name" name="full_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
+              <input type="text" class="form-control" placeholder="Full Name" name="first_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
              </div>
           </div>
         </div>
-
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group">
+           <label for="input">Last Name </label>
+             <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-boxes"></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Full Name" name="last_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
+             </div>
+          </div>
         </div>
+                  
+        </div>
+
+
  
   <div class="row">
           <div class="col-sm-12 col-md-6">
@@ -140,7 +156,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-            <input class="form-control" type="date-time" placeholder="dd-mm-yyyy" name="dob" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+            <input class="form-control" type="date" placeholder="dd-mm-yyyy" name="dob" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
           </div>
@@ -244,7 +260,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
                 <span class="fas fa-envelope"></span>
               </div>
 
-              <input type="text" class="form-control" placeholder="Email" name="email" autocomplete="off"   data-toggle="tooltip" title="Please Enter Email">         
+              <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off"   data-toggle="tooltip" title="Please Enter Email">         
          
             </div>
           </div>
@@ -314,7 +330,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 
             <div class="col-sm-12 col-md-6">
                <div class="form-group">
-  <label for="input">Address 3 </label>
+  <label for="input">Block</label>
 
           <div class="input-group-append">
               <div class="input-group-text">
@@ -385,8 +401,16 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-              <input type="text" class="form-control" placeholder="Category" name="category" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Category Name">         
+              <!-- <input type="text" class="form-control" placeholder="Category" name="category" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Category Name">          -->
           
+              <select class="form-control" name="category" required>
+                <option class="form-control" value="">Please Select Category</option>
+                <option class="form-control" value="General">General</option>
+                <option class="form-control" value="OBC">OBC</option>
+                <option class="form-control" value="SC">SC</option>
+                <option class="form-control" value="ST">ST</option>
+                <option class="form-control" value="EWS">EWS</option>
+              </select>
             </div>
           </div>
             </div>
@@ -401,22 +425,35 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
-              <input type="text" class="form-control" placeholder="Religion" name="religion" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Religion">         
+              <!-- <input type="text" class="form-control" placeholder="Religion" name="religion" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Religion">          -->
          
+              <select class="form-control" name="religion" required>
+                <option class="form-control" value="">Please Select Religion</option>
+                <option class="form-control" value="Hindu">Hindu</option>
+                <option class="form-control" value="Muslim">Muslim</option>
+                <option class="form-control" value="Sikh">Sikh</option>
+                <option class="form-control" value="Christian">Christian</option>
+                <option class="form-control" value="Other">Other</option>
+              </select>
             </div>
           </div>
             </div>
 
             <div class="col-sm-12 col-md-6">
                <div class="form-group">
-  <label for="input">Nationality</label>
+                <label for="input">Nationality</label>
 
           <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-flag"></span>
               </div>
-              <input type="text" class="form-control" placeholder="Nationality" name="nationality" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Nationality">         
+              <!-- <input type="text" class="form-control" placeholder="Nationality" name="nationality" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Nationality">          -->
           
+              <select class="form-control" name="nationality" required>
+                <option class="form-control" value="">Please Select Nationality</option>
+                <option class="form-control" value="Indian">Indian</option>
+                <option class="form-control" value="Nri">Nri</option>
+              </select>
             </div>
           </div>
             </div>

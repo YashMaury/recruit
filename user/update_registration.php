@@ -146,7 +146,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-calendar"></span>
               </div>
-            <input type="text" class="form-control" value="<?php echo date("d-m-Y", strtotime($value1->dob)) ?>"  name="dob"  placeholder="Date Of Birth"  autocomplete="off" required>         
+            <input type="datedepart" class="form-control" value=<?php echo $value1->dob; ?>  name="dob"  placeholder="Date Of Birth"  autocomplete="off" required>         
 
             </div>
           </div>

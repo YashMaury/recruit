@@ -143,7 +143,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-calendar"></span>
               </div>
-            <input type="text" class="form-control"  placeholder="<?php echo date("d-m-Y", strtotime($value1->dob)) ?>" readonly>         
+            <input type="text" class="form-control"  placeholder="<?php echo $value1->dob; ?>" readonly>         
 
             </div>
           </div>
