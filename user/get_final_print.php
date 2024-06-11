@@ -331,7 +331,7 @@ if (($result_payment->records[0]->status == 1) && ($result_payment->records[0]->
                 <td>Application Fee</td>
                 <td><?php echo $value1->registration_no; ?></td>
                 <td><?php echo $result_payment->records[0]->transaction_id; ?></td>
-                <td><?php echo date('d M Y', strtotime($result_payment->records[0]->created_on)); ?></td>
+                <td><?php echo date('d M Y h:i a', strtotime($result_payment->records[0]->created_on)); ?></td>
                 <td><?php echo $amount; ?></td>
                 <td><?php echo $result_payment->records[0]->user_id; ?></td>
                 <td>Online</td>
